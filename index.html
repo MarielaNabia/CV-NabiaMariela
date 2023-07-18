@@ -27,6 +27,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
   <!-- =======================================================
   * Template Name: Personal - v2.5.1
   * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
@@ -40,9 +43,20 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header-tops">
     <div class="container">
+      <div  style="margin-bottom: 2rem; margin-right: 5%;">
+        <a id="us" href="?lang=en">
+          <i class="flag-icon flag-icon-us"></i>       
+        </a> 
+        <a id="es" href="?lang=es">
+          <i class="flag-icon flag-icon-es"></i>        
+        </a>
+      </div>
 
       <h1><a href="index.html">Mariela Nabia</a></h1>
-     <h2>I'm a passionate <span>Developer Full Stack & QA</span> from Argentina</h2>
+
+       <!--  <h2 class="frase" >I'm a passionate <span>Developer Full Stack & QA</span> from Argentina</h2> -->
+       <h2 class="frase" ></h2>
+     
       <div class="social-links">
      
         <a href="./mantenimiento.html" class="github"><img id="github-logo" 
@@ -51,14 +65,18 @@
         <a href="https://www.linkedin.com/in/mariela-nabia-developer" class="linkedin"><i class="icofont-linkedin"></i></a>
 
       </div>
+      
+
       <nav class="nav-menu d-none d-lg-block">
         <ul >
           <li class="active"><a href="#header">Inicio</a></li>
           <li><a href="#about">Perfil</a></li>
           <li><a href="#education">Educación</a></li>
           <li><a href="#experiencia">Experiencia</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#contact">Contacto</a></li>   
+          
         </ul>
+      
       </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
@@ -72,7 +90,7 @@
       <div class="section-title">
        <!--  <h2>About</h2>
         <p>Learn more about me</p> -->
-        <h2>Sobre mi</h2>
+        <h2 class="sobreMi"></h2>
         <p style="margin: 1rem;"> </p>
       </div>
 
@@ -80,7 +98,7 @@
         <div class="col-lg-4" data-aos="fade-right">
           <img src="assets/img/perfilBN.jpg" class="img-fluid" alt="">
         </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left" style="color: #fff;">
           <!-- <h3>Developer &amp; Full Stack Jr</h3> -->
           <h3>Full Stack Jr</h3>
           <p class="font-italic">
@@ -97,9 +115,7 @@
             <p class="font-italic"></p>
              Autodidacta como forma de vida🔍
             </p>
-        
-          
-   
+
         </div>
       </div>
 
@@ -122,7 +138,7 @@
          </div>
 
           <div class="progress">
-            <span class="skill">QA manual Selenium Cypress <i class="val" style="padding-right: 40%;">BOOTSTRAP</i></span>
+            <span class="skill">Selenium | Cypress <i class="val" style="padding-right: 40%;">BOOTSTRAP</i></span>
          </div>
 
           <div class="progress">
@@ -130,7 +146,7 @@
            </div>
 
           <div class="progress">
-            <span class="skill">PYTHON<i class="val" style="padding-right: 40%;">C# | .NET CORE</i></span>
+            <span class="skill">PYTHON<i class="val" style="padding-right: 40%;">C# | .NET</i></span>
           </div>
 
         </div>
@@ -142,7 +158,7 @@
           </div>
 
           <div class="progress">
-            <span class="skill">MYSQL <i class="val" style="padding-right: 40%;">MONGODB</i></span>
+            <span class="skill">SQL Server <i class="val" style="padding-right: 40%;">MONGODB</i></span>
            </div>
 
           <div class="progress">
@@ -162,7 +178,7 @@
         <h2>Soft Skills</h2>
       </div>
 
-      <div class="row skills-content">
+      <div class="row skills-content" id="softSkills">
 
         <div class="col-lg-6">
 
@@ -210,11 +226,11 @@
 
       <div class="section-title">
         <!-- <h2>Interests</h2> -->
-        <h2>OTROS INTERESES</h2>
+        <h2 class="otrosInt">OTROS INTERESES</h2>
       
       </div>
 
-      <div class="row">
+      <div class="row" id="otrosIntereses">
         <div class="col-lg-3 col-md-4">
           <div class="icon-box">
             <i class="ri-store-line" style="color: #ffbb2c;"></i>
@@ -245,44 +261,98 @@
   <section id="education" class="services">
     <div class="container">
 
-      <div class="section-title">
+      <div class="section-title" >
         <h2>Educación</h2>
         <!-- <p>My Services</p> -->
       </div>
-      <p style="margin-left:2%;">
+      <p style="margin-left:2%; color: #fff">
         2023 – Ingeniería en Sistemas de información |  Universidad Tecnológica Nacional. En curso
      </p>
-     <p style="margin-left:2%;">
+     <p style="margin-left:2%; color: #fff">
       2022 – Instituto Superior Politécnico Córdoba - Tecnicatura en Ciencias de Datos e Inteligencia Artificial
    </p>
-      <p style="margin-left:2%;">
+      <p style="margin-left:2%; color: #fff">
          2003 – 2006 Contador Público Nacional 3ºaño |  Universidad Nacional del Litoral
       </p>
-      <p style="margin-left:2%;">
+      <p style="margin-left:2%; color: #fff">
          2002 – Bachiller en Economía y gestión de las organizaciones
      </p>
 
      <div class="section-title " style="margin-top: 2%;">
-      <h2>Formación Testing QA</h2>  
+      <h2>Formación Testing QA y otros</h2>  
     </div>
-    <div class="row" style="margin-left:2%;">   
-      <div class="col-lg-12">   
-        <p>
-          2023 – Testing de Homologación para Entidades Financieras y de Salud | UTN | En curso
+
+
+   
+           
+            <div class="row" style="margin-left:2%; color: #fff" id="qa">   
+              <div class="col-lg-12" >   
+                <p style="color: #fff;">
+                  2023 – <strong>Testing de Homologación para Entidades Financieras y de Salud</strong> | UTN | En curso
+                </p>
+                
+                <P style="color: #fff;">2023 – <strong>Software Testing QA MasterClass</strong>| UDEMY </P>
+                      <ul>
+                      <li><i class="icofont-rounded-right"></i>Credencial: <a href="./assets/certificados/1certificado_QA_Software_Testing.pdf">ver aquí</a> </li>
+                      </ul>
+                 <P style="color: #fff;">2023 – <strong>BPMN for Business Analyst</strong>| UDEMY </P>
+                      <ul>
+                      <li><i class="icofont-rounded-right"></i>Credencial: <a href="./assets/certificados/BPMNforBusinessAnalyst.pdf">ver aquí</a> </li>
+                      </ul>      
+                <P style="color: #fff;">2023 – <strong>Modelado de casos de uso para analistas de negocios BA</strong>| UDEMY </P>
+                      <ul>
+                      <li><i class="icofont-rounded-right"></i>Credencial: <a href="./assets/certificados/modeladoDeCasosDeUso_BA.pdf">ver aquí</a> </li>
+                      </ul>      
+                <P style="color: #fff;">2022 – <strong>Soft Skills-Comunicación, Flexibilidad, Trabajo en Equipo y Autoconfianza</strong>| ACCENTURE Y  Academia BA Emprende </P>
+                      <ul>
+                      <li><i class="icofont-rounded-right"></i>Credencial: <a href="./assets/certificados/1Diploma_accenture_HabilidadesBlandas.pdf">ver aquí</a> </li>
+                      </ul>
+        
+                    </div>
+            </div> 
+
+          
+  
+  <!-- Modal -->
+<!-- <div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Modal content goes here.</p>
+    <div class="row" style="margin-left:2%; color: #fff" id="qa">   
+      <div class="col-lg-12" >   
+        <p style="color: #fff;">
+          2023 – <strong>Testing de Homologación para Entidades Financieras y de Salud</strong> | UTN | En curso
         </p>
-        <P>2023 – <strong>Software Testing QA MasterClass</strong>| UDEMY </P>
+        
+        <P style="color: #fff;">2023 – <strong>Software Testing QA MasterClass</strong>| UDEMY </P>
               <ul>
               <li><i class="icofont-rounded-right"></i>Credencial: <a href="./assets/certificados/1certificado_QA_Software_Testing.pdf">ver aquí</a> </li>
               </ul>
+         <P style="color: #fff;">2023 – <strong>BPMN for Business Analyst</strong>| UDEMY </P>
+              <ul>
+              <li><i class="icofont-rounded-right"></i>Credencial: <a href="./assets/certificados/BPMNforBusinessAnalyst.pdf">ver aquí</a> </li>
+              </ul>      
+        <P style="color: #fff;">2023 – <strong>Modelado de casos de uso para analistas de negocios BA</strong>| UDEMY </P>
+              <ul>
+              <li><i class="icofont-rounded-right"></i>Credencial: <a href="./assets/certificados/modeladoDeCasosDeUso_BA.pdf">ver aquí</a> </li>
+              </ul>      
+        <P style="color: #fff;">2022 – <strong>Soft Skills-Comunicación, Flexibilidad, Trabajo en Equipo y Autoconfianza</strong>| ACCENTURE Y  Academia BA Emprende </P>
+              <ul>
+              <li><i class="icofont-rounded-right"></i>Credencial: <a href="./assets/certificados/1Diploma_accenture_HabilidadesBlandas.pdf">ver aquí</a> </li>
+              </ul>
+
+       
     </div>
   </div> 
+  </div>
+</div> -->
 
-     <div class="section-title" style="margin-top: 2%;">
-      <h2>Formación Developer</h2>    
+     <div class="section-title" style="margin-top: 2%;" >
+      <h2 id="dev">Formación Developer</h2>    
     </div>
          
-        <div class="row" style="margin-left:2%;" >    
-            <div class="col-lg-12">
+        <div class="row" style="margin-left:2%;"  >    
+            <div class="col-lg-12" id="Cur">
               <p>
                 2023 – Curso Java - Spring Avanzado | CODO A CODO 4.0 | Academia BA Emprende | En curso
               </p>
@@ -316,10 +386,7 @@
               <ul>
               <li><i class="icofont-rounded-right"></i>Credencial: <a href="https://todocodeacademy.com/certificate/icn/">ver aquí</a> </li>
               </ul>
-              <P>2022 – <strong>Soft Skills-Comunicación, Flexibilidad, Trabajo en Equipo y Autoconfianza</strong>| ACCENTURE Y  Academia BA Emprende </P>
-              <ul>
-              <li><i class="icofont-rounded-right"></i>Credencial: <a href="./assets/certificados/1Diploma_accenture_HabilidadesBlandas.pdf">ver aquí</a> </li>
-              </ul>
+              
               <P>2022 – <strong>Desarrollador Full Stack .NET</strong>| Instituto Superior Politécnico Córdoba </P> 
               <ul>
                 <li><i class="icofont-rounded-right"></i>Certifica: ISPC, Ministerio de Educación, Ministerio de Ciencia y Tecnología, Ministerio de Empleo y Formación Profesional. </li>
@@ -332,7 +399,7 @@
                 <li><i class="icofont-rounded-right"></i>Certifica: Academia BA Emprende. </li>
                 <li><i class="icofont-rounded-right"></i>Duración: 20 semanas.</li>
                 <li><i class="icofont-rounded-right"></i> JavaScript | Java | MySQL.  </li>
-                <li><i class="icofont-rounded-right"></i>Credencial: <a href="">ver aquí</a> </li>
+                <li><i class="icofont-rounded-right"></i>Credencial: <a href="/assets/certificados/FullStackJava-CodoaCodo.pdf" >ver aquí</a> </li>
               </ul>
               
               <P>2022 – <strong>Full Stack Java</strong>| #YOPROGRAMO | ARGENTINA PROGRAMA </P>
@@ -372,10 +439,9 @@
         
         
           <div class="section-title" style="margin-top: 2%;">
-            <h2>Formación Autodidacta</h2>  
+            <h2 class="row">Formación Autodidacta</h2>  
           </div>
-          <div class="row" style="margin-left:2%;">
-           
+          <div class="row" style="margin-left:2%;">         
             <div class="col-lg-12">
               <P> – PROGRAMACION DESDE CERO - EDTEAM </P>
               <P> – CURSO HTML5 DESDE CERO - SOY DALTO</P>
@@ -402,8 +468,14 @@
            
       <div class="col-lg-12" >
         <P>2022 – Presente |<strong> Desarrollador Full Stack </strong>| Grupo Prominente </P>
+        <ul>
+          <li>:: Proyecto Banorte</li>  
+          <li>:: Proyecto GCBA: Defensa al Consumidor y Protección al Ciudadano</li>
+        </ul>
 
-        <P>2022-2023|<strong> Desarrollador Full Stack - Frontend REACT</strong>| Altaluna </P>
+        <P>2022-2023|<strong> Desarrollador Full Stack - Frontend REACT</strong>| AL Proyecto CMPC </P>
+        
+
         
         <P>2012-2020 | Encargada/responsable Servicio técnico telefonía – reparación software y hardware| TodoCelular </P>
 
@@ -484,6 +556,215 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="/CVNabiaMariela/modal.js"></script>
+
+  <script>
+     // Obtener el idioma actual de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentLang = urlParams.get('lang');
+    
+    // Obtener los elementos de los enlaces
+    
+    const englishLink = document.getElementById('us');
+    const spanishLink = document.getElementById('es');
+    
+    // Ocultar el enlace correspondiente al idioma actual
+    if (currentLang === 'es') {
+      spanishLink.style.display = 'none';
+    } else if (currentLang === 'en') {
+      englishLink.style.display = 'none';
+    } 
+    
+
+    // Obtener los elementos del menú
+    const menuItems = document.querySelectorAll('.nav-menu ul li');
+    
+    // Asociar los textos según el idioma seleccionado
+    if (currentLang === 'en') {
+      menuItems[0].querySelector('a').innerText = 'Home';
+      menuItems[1].querySelector('a').innerText = 'Profile';
+      menuItems[2].querySelector('a').innerText = 'Education';
+      menuItems[3].querySelector('a').innerText = 'Experience';
+      menuItems[4].querySelector('a').innerText = 'Contact';
+    } else if (currentLang === 'es') {
+      menuItems[0].querySelector('a').innerText = 'Inicio';
+      menuItems[1].querySelector('a').innerText = 'Perfil';
+      menuItems[2].querySelector('a').innerText = 'Educación';
+      menuItems[3].querySelector('a').innerText = 'Experiencia';
+      menuItems[4].querySelector('a').innerText = 'Contacto';
+    }
+    const frase = document.querySelector('.frase');
+  /*   if (currentLang === 'en') {
+    frase.innerHTML = `I'm a passionate <span>Developer Full Stack & QA</span> from Argentina`;
+  } else if (currentLang === 'es') {
+    frase.innerHTML = `Soy una apasionada <span>Desarrolladora Full Stack & QA</span> de Argentina`;
+  } */
+
+  if (currentLang != 'en') {
+    frase.innerHTML = `Soy una apasionada <span>Desarrolladora Full Stack & QA</span> de Argentina`;
+    
+  } else if (currentLang === 'en') {
+    frase.innerHTML = `I'm a passionate <span>Developer Full Stack & QA</span> from Argentina`;
+  }
+
+  const sobreMi = document.querySelector('.sobreMi');
+    if (currentLang === 'en') {
+      sobreMi.innerHTML = `About me`;
+  } else if (currentLang === 'es') {
+    sobreMi.innerHTML = `Sobre mi`;
+  }
+    // Obtener el elemento del div
+    const divContent = document.querySelector('.col-lg-8.content'); 
+
+  // Asociar el contenido según el idioma seleccionado
+  if (currentLang === 'en') {
+    divContent.innerHTML = `
+      <h3>Full Stack Jr</h3>
+      <p class="font-italic">
+        They call me Meri I'm a person with constant motivation to improve, tenacious and persistent, I don't get discouraged easily 💪🏻.
+      </p>
+      <p class="font-italic">
+        Adaptable to any work environment, with effective communication skills 👂🏻 and always willing to learn and grow, both personally and professionally.
+        I approach every challenge with enthusiasm and commitment 🤝🏻.
+      </p>
+      <p class="font-italic">
+        More of an extroverted personality, I enjoy building relationships with the people in the teams I'm part of 🤜🏻🤛🏻.
+      </p>
+      <p class="font-italic">
+        Self-taught as a way of life🔍.
+      </p>
+    `;
+  } else if (currentLang === 'es') {
+    divContent.innerHTML = `
+      <h3>Desarrollador Full Stack Jr</h3>
+      <p class="font-italic">
+        Me dicen Meri soy una persona con una motivación constante por mejorar, tenaz y persistente, no me desanimo con facilidad 💪🏻.
+      </p>
+      <p class="font-italic">
+        Adaptable a cualquier entorno de trabajo, con habilidades efectivas de comunicación 👂🏻 y siempre dispuesto a aprender y crecer, tanto personal como profesionalmente.
+        Afronto cada desafío con entusiasmo y compromiso 🤝🏻.
+      </p>
+      <p class="font-italic">
+        Más bien de personalidad extrovertida, disfruto estableciendo relaciones con las personas de los equipos de los que formo parte 🤜🏻🤛🏻.
+      </p>
+      <p class="font-italic">
+        Autodidacta como forma de vida🔍.
+      </p>
+    `;
+  }
+
+  const otrosIntTitle = document.querySelector('.otrosInt');
+  if (currentLang === 'en') {
+    otrosIntTitle.innerText = 'OTHER INTERESTS';
+  } else if (currentLang === 'es') {
+    otrosIntTitle.innerText = 'OTROS INTERESES';
+  }
+
+  const sectionTitles = document.querySelectorAll('#otrosIntereses .icon-box h3');
+  // Asociar los textos de los icon-box según el idioma seleccionado
+  if (currentLang === 'en') {
+    sectionTitles[0].innerText = 'Family and Friends';
+    sectionTitles[1].innerText = 'Finances';
+    sectionTitles[2].innerText = 'Physical Activity';
+  } else if (currentLang === 'es') {
+    sectionTitles[0].innerText = 'Familia y amigos';
+    sectionTitles[1].innerText = 'Finanzas';
+    sectionTitles[2].innerText = 'Actividad física';
+  }
+
+// Obtener los elementos de las habilidades
+const skillElements = document.querySelectorAll('#softSkills .skill');
+  
+  // Asociar los textos de las habilidades según el idioma seleccionado
+  if (currentLang === 'en') {
+    skillElements[0].innerText = 'Responsibility';
+    skillElements[1].innerText = 'Adaptability to Changes';
+    skillElements[2].innerText = 'Good Communication';
+    skillElements[3].innerText = 'Analytical Skills';
+    skillElements[4].innerText = 'Proactive';
+    skillElements[5].innerText = 'Teamwork';
+    skillElements[6].innerText = 'Self-taught';
+    skillElements[7].innerText = 'Integration Skills';
+  } else if (currentLang === 'es') {
+    skillElements[0].innerText = 'Responsabilidad';
+    skillElements[1].innerText = 'Adaptación a los Cambios';
+    skillElements[2].innerText = 'Buena Comunicación';
+    skillElements[3].innerText = 'Capacidad Analítica';
+    skillElements[4].innerText = 'Proactiva';
+    skillElements[5].innerText = 'Trabajo en Equipo';
+    skillElements[6].innerText = 'Autodidacta';
+    skillElements[7].innerText = 'Capacidad de Integración';
+  }
+
+
+  // Asociar los textos según el idioma seleccionado
+  if (currentLang === 'en') {
+    document.querySelector('#education .section-title h2').innerText = 'Education';
+
+    const educationItems = document.querySelectorAll('#education p');
+    educationItems[0].innerText = '2023 – Bachelor\'s Degree in Information Systems | National Technological University. In progress';
+    educationItems[1].innerText = '2022 – Politechnical Institute Córdoba - Data Science and Artificial Intelligence Technician';
+    educationItems[2].innerText = '2003 – 2006 National Public Accountant 3rd year | National University of Litoral';
+    educationItems[3].innerText = '2002 – Bachelor in Economics and Organizational Management';
+
+    document.querySelector('#education .section-title:nth-of-type(2) h2').innerText = 'QA Testing Training';
+
+    const qaTrainingItems = document.querySelectorAll('#education #qa p');
+    qaTrainingItems[0].innerText = '2023 – Homologation Testing for Financial and Health Entities | National Technological University | In progress';
+    qaTrainingItems[1].innerText = '2023 – Software Testing QA MasterClass | UDEMY';
+    qaTrainingItems[1].querySelector('a').setAttribute('href', './assets/certificados/1certificado_QA_Software_Testing.pdf');
+
+    document.querySelector('#dev').innerText = 'Developer Training';
+
+    const devTrainingItems = document.querySelectorAll('#cur p');
+    devTrainingItems[0].innerText = '2023 – Advanced Java - Spring Course | CODO A CODO 4.0 | BA Emprende Academy | In progress';
+    devTrainingItems[1].innerText = '2023 – Creating Web APIs with .NET 6 .NET 7 | UDEMY';
+    devTrainingItems[1].querySelector('a').setAttribute('href', './assets/certificados/Creando_Web_APIs_Profesionales_con_.NET_6_NET_7.pdf');
+    devTrainingItems[2].innerText = '2023 – Entity Framework CORE 6 | UDEMY';
+    devTrainingItems[2].querySelector('a').setAttribute('href', './assets/certificados/Entity_Framework_Core_6_el_Curso_Completo.pdf');
+    devTrainingItems[3].innerText = '2023 – C# Course | UDEMY';
+    devTrainingItems[3].querySelector('a').setAttribute('href', './assets/certificados/Curso_C.pdf');
+    devTrainingItems[4].innerText = '2023 – Design Patterns in C# Applied in ASP .Net | UDEMY';
+    devTrainingItems[4].querySelector('a').setAttribute('href', './assets/certificados/Patrones_de_diseno_en_C_Aplicados_en_ASP_.Net.pdf');
+    devTrainingItems[5].innerText = '2023 – ASPNET CORE WEB API from DATABASE | UDEMY';
+    devTrainingItems[5].querySelector('a').setAttribute('href', './assets/certificados/ASPNET_CORE_WEB_API_desde_BD.pdf');
+    devTrainingItems[6].innerText = '2023 – Introduction to Cybersecurity | Fundación Telefónica';
+    devTrainingItems[6].querySelector('a').setAttribute('href', './assets/certificados/1FT_AR_CertificadoCiberseguridad-1.pdf');
+    devTrainingItems[7].innerText = '2022 – Introduction to Relational Databases - MySQL | TODO CODO';
+devTrainingItems[7].querySelector('a').setAttribute('href', 'https://todocodeacademy.com/certificate/icn/');
+
+devTrainingItems[8].innerText = '2022 – Soft Skills - Communication, Flexibility, Teamwork, and Self-Confidence | ACCENTURE and BA Emprende Academy';
+devTrainingItems[8].querySelector('a').setAttribute('href', './assets/certificados/1Diploma_accenture_HabilidadesBlandas.pdf');
+
+devTrainingItems[9].innerText = '2022 – Full Stack Developer .NET | Politechnical Institute Córdoba';
+devTrainingItems[9].querySelector('a').setAttribute('href', './assets/certificados/1CERTIFICADO_NABIA_FullStack.Net.pdf');
+
+devTrainingItems[10].innerText = '2022 – Full Stack Java | CODO A CODO 4.0 | BA Emprende Academy - Buenos Aires';
+devTrainingItems[10].querySelector('a').setAttribute('href', '#');
+
+devTrainingItems[11].innerText = '2022 – Full Stack Java | #YOPROGRAMO | ARGENTINA PROGRAMA';
+devTrainingItems[11].querySelector('a').setAttribute('href', './assets/certificados/1Certificado_YoProgramo_fullStackJava.pdf');
+
+devTrainingItems[12].innerText = '2022 – Introduction to Programming | #SEPROGRAMAR | ARGENTINA PROGRAMA';
+devTrainingItems[12].querySelector('a').setAttribute('href', 'https://mumuki.io/argentinaprograma/certificates/verify/5-fPsIExLCzSlQPw');
+
+devTrainingItems[13].innerText = '2022 – PCAP - Programming Essentials in Python - Cisco Networking Academy';
+devTrainingItems[13].querySelector('a').setAttribute('href', '#');
+devTrainingItems[14].innerText = '2022 – JavaScript Fundamentals - SoloLearn';
+devTrainingItems[14].querySelector('a').setAttribute('href', '#');
+devTrainingItems[15].innerText = '2022 – HTML Fundamentals - SoloLearn';
+devTrainingItems[15].querySelector('a').setAttribute('href', '#');
+devTrainingItems[16].innerText = '2022 – CSS Fundamentals - SoloLearn';
+devTrainingItems[16].querySelector('a').setAttribute('href', '#');
+devTrainingItems[17].innerText = '2022 – Python Fundamentals - SoloLearn';
+devTrainingItems[17].querySelector('a').setAttribute('href', '#');
+devTrainingItems[18].innerText = '2022 – Java Fundamentals - SoloLearn';
+devTrainingItems[18].querySelector('a').setAttribute('href', '#');
+
+  }
+
+  </script>
+  
 
 </body>
 
